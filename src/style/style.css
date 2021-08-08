@@ -58,6 +58,14 @@ main .container {
     padding: 1em;
 }
 
+main .container .heading__text {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-family: monospace;
+    color: #025a4d;
+}
+
 main .container label {
     font-size: 1.3em;
     font-family: monospace;
@@ -105,6 +113,14 @@ main .container__search {
     width: 80%;
     margin: auto;
     padding: 1em;
+}
+
+main .container__search .search__title {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: monospace;
+    margin-bottom: 1em;
+    color: #025a4d;
 }
 
 main .container__search #submitSearch {
@@ -170,6 +186,7 @@ main .container__book__read .container__book__title {
     font-size: 1.2em;
     font-family: monospace;
     margin-bottom: 2em;
+    color: #025a4d;
 }
 
 main .container__book__unread .books__unread,
@@ -268,4 +285,12 @@ main .container__book__unread .books__unread .button__card .btn__read {
     cursor: pointer;
     transition: 0.3s;
     font-family: monospace;
+}
+
+@media screen and (max-width: 512px) {
+
+    main .container__book__unread .books__unread .card,
+    main .container__book__read .books__read .card {
+        width: 100%;
+    }
 }
