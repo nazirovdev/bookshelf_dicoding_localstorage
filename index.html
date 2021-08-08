@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Storage</title>
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="text__logo">
+                <h1>Bookshelf Apps</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form method="#" id="form__bookself">
+                <div class="judul">
+                    <label for="title">Judul</label>
+                    <input type="text" class="txt__judul" id="title" required>
+                </div>
+                <div class="author">
+                    <label for="author">Author</label>
+                    <input type="text" class="txt_author" id="author" required>
+                </div>
+                <div class="year">
+                    <label for="year">Year</label>
+                    <input type="date" class="txt__year" id="year" required>
+                </div>
+                <div class="isRead">
+                    <label for="isRead">Selesai dibaca</label>
+                    <input type="checkbox" class="isRead" id="isRead">
+                </div>
+                <div class="submit">
+                    <button type="submit" id="tambah">Masukan buku kedalam rak <span class="button__span">belum selesai
+                            dibaca</span></button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container__search">
+            <div class="search">
+                <form method="#" id="submitSearch">
+                    <input type="text" class="input_search" id="search">
+                    <button type="submit" id="btnCari">Cari</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container__book__unread">
+            <div class="container__book__title">
+                <h2>Belum Selesai dibaca</h2>
+            </div>
+            <div class="books__unread" id="books__unread"></div>
+        </div>
+
+        <div class="container__book__read">
+            <div class="container__book__title">
+                <h2>Sudah Selesai dibaca</h2>
+            </div>
+            <div class="books__read" id="books__read"></div>
+        </div>
+    </main>
+    <script src="./src/script/data.js"></script>
+    <script src="./src/script/dom.js"></script>
+    <script src="./src/script/app.js"></script>
+</body>
+
+</html>

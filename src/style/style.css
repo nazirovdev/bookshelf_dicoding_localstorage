@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type=text],
+input[type=date] {
+    width: 100%;
+    padding: 0.8em;
+    border: solid 1px rgba(212, 212, 212, 0.933);
+    border-radius: 0.7em;
+    background-color: #d8d3d0;
+    transition: 0.3s;
+    display: block;
+}
+
+input:focus {
+    outline: none;
+    background-color: #dcdbe1;
+    box-shadow: inset 0 0 3px rgba(219, 219, 219, 0.5)
+}
+
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #2a5d68;
+    padding: 1em;
+}
+
+header .text__logo {
+    color: #dcdbe1;
+    font-family: monospace;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    transition: 0.3s;
+}
+
+header .text__logo:hover {
+    color: #c5d7d9;
+}
+
+main {
+    margin-top: 6em;
+}
+
+main .container {
+    display: flex;
+    box-shadow: 4px 4px 4px 4px #f3f3f3;
+    border-radius: 1em;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+}
+
+main .container label {
+    font-size: 1.3em;
+    font-family: monospace;
+    color: #025a4d;
+}
+
+main .container .judul,
+main .container .author,
+main .container .year {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+main .container .isRead {
+    margin-bottom: 1em;
+}
+
+main .container .submit button {
+    border-style: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0.5em;
+    background-color: #003b32;
+    color: #dcdbe1;
+    font-size: 1.2em;
+    font-family: monospace;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+main .container .submit button:hover {
+    background-color: #025a4d;
+}
+
+main .container .submit button:active {
+    background-color: #003b32;
+}
+
+main .container__search {
+    display: flex;
+    box-shadow: 4px 4px 4px 4px #f3f3f3;
+    border-radius: 1em;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+}
+
+main .container__search #submitSearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+main .container__search #submitSearch .input_search {
+    width: 80%;
+    padding: 0.8em;
+    border: solid 1px rgba(212, 212, 212, 0.933);
+    border-radius: 0.7em;
+    background-color: #d8d3d0;
+    transition: 0.3s;
+    display: block;
+    transition: 0.3s;
+}
+
+main .container__search #submitSearch .input_search:focus {
+    background-color: #dcdbe1;
+}
+
+main .container__search #submitSearch #btnCari {
+    border-style: none;
+    border-radius: 0.5em;
+    background-color: #003b32;
+    color: #dcdbe1;
+    cursor: pointer;
+    font-family: monospace;
+    padding: 0.7em;
+    font-weight: bold;
+    width: 10em;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+main .container__search #submitSearch #btnCari:hover {
+    background-color: #025a4d;
+}
+
+main .container__search #submitSearch #btnCari:active {
+    background-color: #003b32;
+}
+
+main .container__book__unread,
+main .container__book__read {
+    display: flex;
+    box-shadow: 4px 4px 4px 4px #f3f3f3;
+    border-radius: 1em;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+main .container__book__unread .container__book__title,
+main .container__book__read .container__book__title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    font-family: monospace;
+    margin-bottom: 2em;
+}
+
+main .container__book__unread .books__unread,
+main .container__book__read .books__read {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main .container__book__unread .books__unread .card,
+main .container__book__read .books__read .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0.5em;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 1em;
+    background-color: #f7f7f7;
+    box-shadow: 4px 2px 2px #d4d4d4;
+    transition: 0.3s;
+}
+
+main .container__book__unread .books__unread .card:hover,
+main .container__book__read .books__read .card:hover {
+    background-color: #ececec;
+    box-shadow: 4px 3px 3px #b8b8b8;
+}
+
+main .container__book__unread .books__unread .card .card__title,
+main .container__book__read .books__read .card .card__title {
+    margin-bottom: 0.6em;
+    font-family: monospace;
+    font-size: 1em;
+    text-align: center;
+}
+
+main .container__book__unread .books__unread .card .card__author,
+main .container__book__read .books__read .card .card__author {
+    margin-top: 0.5em;
+    font-family: monospace;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+main .container__book__unread .books__unread .card .card__img,
+main .container__book__read .books__read .card .card__img {
+    width: 40%;
+}
+
+main .container__book__unread .books__unread .card .card__year,
+main .container__book__read .books__read .card .card__year {
+    font-family: monospace;
+}
+
+main .container__book__unread .books__unread .button__card,
+main .container__book__read .books__read .button__card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    width: 100%;
+}
+
+main .container__book__unread .books__unread .button__card button,
+main .container__book__read .books__read .button__card button {
+    display: block;
+    margin-bottom: 0.5em;
+    border-style: none;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+main .container__book__unread .books__unread .button__card .btn__delete,
+main .container__book__read .books__read .button__card .btn__delete {
+    background-color: #c40031;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: monospace;
+}
+
+main .container__book__unread .books__unread .button__card .btn__delete:hover,
+main .container__book__read .books__read .button__card .btn__delete:hover {
+    background-color: #d10538;
+}
+
+main .container__book__read .books__read .button__card .btn__unread,
+main .container__book__unread .books__unread .button__card .btn__read {
+    background-color: #025a4d;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: monospace;
+}
